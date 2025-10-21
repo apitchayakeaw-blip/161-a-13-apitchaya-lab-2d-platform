@@ -9,8 +9,17 @@ public abstract class Character : MonoBehaviour
            set => health = (value < 0) ? 0: value; 
         }
 
-    protected Animater anim;
-    protected Rigidbody rb;
+    protected Animator anim;
+    protected Rigidbody2D rb;
+
+    public void Intialize(int startHealth)
+    {
+        Health = startHealth;
+        Debug.Log($"{this.name} intial Health {this.Health}");
+
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     //meathods
 
@@ -18,6 +27,8 @@ public abstract class Character : MonoBehaviour
     {
         Health -= damage;
         Debug.Log($"{this.name} took damage {damage} current health : {Health}");
+
+        IsDead();
 
     }
 
