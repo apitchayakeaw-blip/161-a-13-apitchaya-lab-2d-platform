@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Character : MonoBehaviour
 {
+    [SerializeField] private Slider slider;
+
+    
     private int health;
     public int Health 
         { 
@@ -26,7 +30,14 @@ public abstract class Character : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        
         Debug.Log($"{this.name} took damage {damage} current health : {Health}");
+        
+        /*slider.value = Health / damage;
+        Health = GetComponentsInChildren<Slider>().Length;*/
+        
+        
+        
 
         IsDead();
 
