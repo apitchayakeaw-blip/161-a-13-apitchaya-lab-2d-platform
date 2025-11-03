@@ -6,13 +6,10 @@ public class FloatingHpBar : MonoBehaviour
 {
     [SerializeField] private Slider slider;
 
-    public void UpdateHealthBar(Character character)
+    public void UpdateHealthBar(float Health, float maxHp)
     {
-        slider.value = character.Health;
+        slider.value = Health / maxHp;
     }
 
-    internal void UpdateHealthBar(GameObject gameObject)
-    {
-        throw new NotImplementedException();
-    }
+    
 }
