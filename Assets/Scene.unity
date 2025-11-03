@@ -1544,7 +1544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d52087ef9181245bbc18496c63733c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 0}
+  hpBar: {fileID: 1620746040}
   atkRange: 0
   player: {fileID: 904463538}
   <Bullet>k__BackingField: {fileID: 115806, guid: 40466c5ac40024bbca1e4b144cdf43c2, type: 3}
@@ -1728,7 +1728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6dde756e6058d6498c128ea20bc0d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 0}
+  hpBar: {fileID: 1290979435}
   velocity: {x: 0, y: 0}
   MovePoint:
   - {fileID: 1843425360}
@@ -3156,6 +3156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1290979433}
   - component: {fileID: 1290979434}
+  - component: {fileID: 1290979435}
   m_Layer: 5
   m_Name: HPbarAnt
   m_TagString: Untagged
@@ -3235,6 +3236,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1290979435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290979432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ae3478f42aff44895f5c1e3a6b0a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1290979434}
 --- !u!4 &1292269285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459178, guid: adbd0a68b07c34ac38ccd165d5b63bc1, type: 3}
@@ -4036,6 +4050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620746039}
   - component: {fileID: 1620746038}
+  - component: {fileID: 1620746040}
   m_Layer: 5
   m_Name: HPbarCroc
   m_TagString: Untagged
@@ -4115,6 +4130,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1620746040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620746037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ae3478f42aff44895f5c1e3a6b0a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1620746038}
 --- !u!1 &1631038877
 GameObject:
   m_ObjectHideFlags: 0
