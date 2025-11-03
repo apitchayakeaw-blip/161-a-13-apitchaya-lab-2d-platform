@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 public abstract class Character : MonoBehaviour
 {
-    [SerializeField] private Slider slider;
 
+    [SerializeField] FloatingHpBar hpBar;
     
     private int health;
     public int Health 
@@ -23,6 +24,8 @@ public abstract class Character : MonoBehaviour
 
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        //hpBar = GetComponentInChildren<FloatingHpBar>();
     }
 
     //meathods
@@ -33,11 +36,7 @@ public abstract class Character : MonoBehaviour
         
         Debug.Log($"{this.name} took damage {damage} current health : {Health}");
         
-        /*slider.value = Health / damage;
-        Health = GetComponentsInChildren<Slider>().Length;*/
-        
-        
-        
+        //hpBar.UpdateHealthBar(gameObject);
 
         IsDead();
 

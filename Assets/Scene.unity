@@ -739,6 +739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 375384611}
   - component: {fileID: 375384612}
+  - component: {fileID: 375384613}
   m_Layer: 5
   m_Name: HPbarPlayer
   m_TagString: Untagged
@@ -818,6 +819,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &375384613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375384610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ae3478f42aff44895f5c1e3a6b0a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 375384612}
 --- !u!1 &393657495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,7 +1544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d52087ef9181245bbc18496c63733c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 1620746038}
+  hpBar: {fileID: 0}
   atkRange: 0
   player: {fileID: 904463538}
   <Bullet>k__BackingField: {fileID: 115806, guid: 40466c5ac40024bbca1e4b144cdf43c2, type: 3}
@@ -1714,7 +1728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6dde756e6058d6498c128ea20bc0d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 1290979434}
+  hpBar: {fileID: 0}
   velocity: {x: 0, y: 0}
   MovePoint:
   - {fileID: 1843425360}
@@ -2149,7 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1fc8701ab3eab4897237656d243532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 375384612}
+  hpBar: {fileID: 375384613}
   <Bullet>k__BackingField: {fileID: 182108, guid: a5638a192258f4059b0e074542d33fbc, type: 3}
   <ShootPoint>k__BackingField: {fileID: 1908691122}
 --- !u!4 &904463543 stripped
